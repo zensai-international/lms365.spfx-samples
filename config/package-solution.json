@@ -9,10 +9,10 @@
     "isDomainIsolated": false,
     "webApiPermissionRequests": [
         {
-          "resource": "lms365-api-prod",
-          "scope": "user_impersonation"
-        }        
-      ]
+            "resource": "LMS365 API", 
+            "scope": "user_impersonation"
+        }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/lms365-spfx-samples.sppkg"

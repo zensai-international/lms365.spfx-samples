@@ -20,10 +20,10 @@ export default class Lms365StatisticsWebPart extends BaseClientSideWebPart<ILms3
 
     public async render() {
         const lmsAPIClient = await this.context.aadHttpClientFactory.getClient(this.LMS365APIResourceId);
-        const response = await lmsAPIClient.get('https://ne-api.365.systems/odata/v2/Courses?$count=true&$top=0', AadHttpClient.configurations.v1);
+        const response = await lmsAPIClient.get('https://api.365.systems/odata/v2/Courses?$count=true&$top=0', AadHttpClient.configurations.v1);
         const responseJson = await response.json();
-    
-        const enrollmentsResponse = await lmsAPIClient.get('https://ne-api.365.systems/odata/v2/Enrollments?$count=true&$top=0', AadHttpClient.configurations.v1);
+        //please use region based uris
+        const enrollmentsResponse = await lmsAPIClient.get('https://api.365.systems/odata/v2/Enrollments?$count=true&$top=0', AadHttpClient.configurations.v1);
         const enrollmentsResponseJson = await enrollmentsResponse.json();
         
     this.domElement.innerHTML = `
