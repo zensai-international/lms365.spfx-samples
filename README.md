@@ -10,7 +10,9 @@ The repository contains SharePoint Framework solution demonstrates how to use LM
 ### Configure access to LMS365 API
 Access to LMS365 API should be configured using `package-solution.json` 
 * You need to open `https://portal.azure.com > Azure Active Directory > Enterprise Applications` and search lms365 api application. it could be found by one of two search criterias: `lms365-api-prod` or `LMS365 API`
-IMAGE
+![](https://i.imgur.com/oJSDhMr.png)  
+OR  
+![](https://i.imgur.com/IHQz8P2.png)
 
 * Once application found copy the name `lms365-api-prod` or `LMS365 API`
 
@@ -39,7 +41,8 @@ gulp serve
 
 * Upload the package file from `repository-folder\sharepoint\solution\lms365-spfx-samples.sppkg` to the SharePoint app catalog
 * Once package is uploaded you need to approve LMS365 API permission request. It could be done using steps from [documentation](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/use-aadhttpclient#manage-permission-requests)  
-IMAGE  
+![](https://i.imgur.com/XAmL2J9.png)  
+
 the request is approved one time. After request is approved web part will able to connect to the LMS365 API and ready to run.
 * Open any modern site you have admin access to and then navigate to hosted workbench `https://contoso.sharepoint.com/sites/modernsite/_layouts/15/workbench.aspx`  
 **`IMPORTANT: workbench should be hosted and NOT localhost based`**
