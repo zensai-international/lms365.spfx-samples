@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "lms365-spfx-samples-client-side-solution",
+    "id": "819b8e8e-da9a-4c81-9a07-2a3b78859c96",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+        {
+          "resource": "lms365-api-prod",
+          "scope": "user_impersonation"
+        }        
+      ]
+  },
+  "paths": {
+    "zippedPackage": "solution/lms365-spfx-samples.sppkg"
+  }
+}
